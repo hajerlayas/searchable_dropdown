@@ -389,7 +389,7 @@ class SelectionWidgetState<T> extends State<SelectionWidget<T>> {
     } else {
       return ListTile(
         enabled: !_isDisabled(item),
-        title: Text(_selectedItemAsString(item)),
+        title: Text(_selectedItemAsString(item), style: Theme.of(context).textTheme.titleMedium,),
         selected: !widget.popupProps.showSelectedItems ? false : _isSelectedItem(item),
         onTap: _isDisabled(item) ? null : () => _handleSelectedItem(item),
       );
