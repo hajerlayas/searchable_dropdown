@@ -460,7 +460,7 @@ class SelectionWidgetState<T> extends State<SelectionWidget<T>> {
                 child: TextField(
                   enableIMEPersonalizedLearning: widget.popupProps.searchFieldProps.enableIMEPersonalizedLearning,
                   clipBehavior: widget.popupProps.searchFieldProps.clipBehavior,
-                  style: widget.popupProps.searchFieldProps.style,
+                  style: Theme.of(context).textTheme.titleMedium,
                   controller: searchBoxController,
                   focusNode: widget.popupProps.searchFieldProps.focusNode,
                   autofocus: widget.popupProps.searchFieldProps.autofocus,
